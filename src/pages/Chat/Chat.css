@@ -1,0 +1,13 @@
+.chat{
+    background: rgb(58,94,180);
+    background: linear-gradient(90deg, rgba(58,94,180,1) 9%, rgba(253,87,29,1) 56%, rgba(252,176,69,1) 100%);
+    display: grid;
+    place-items: center;
+}
+.chat-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+}
+
+

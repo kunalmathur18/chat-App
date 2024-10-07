@@ -1,0 +1,63 @@
+/* .chat-msg {
+    height: calc(100% - 70px);
+    padding-bottom: 50px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.msg{
+    border-radius: 8px 8px 0px 8px;
+    max-width: 200px;
+}
+.r-msg .msg{
+    border-radius: 8px 8px 8px 0px;
+} */
+
+
+.chat-msg {
+    height: calc(100% - 70px);
+    padding-bottom: 50px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.msg {
+    border-radius: 8px 8px 0px 8px;
+    max-width: 200px;
+}
+
+/* Received message (r-msg) aligned to the left */
+.r-msg {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.r-msg .msg {
+    border-radius: 8px 8px 8px 0px;
+    align-self: flex-start;  /* Ensure it aligns to the left */
+    margin-right: auto;      /* Pushes it to the left side */
+}
+
+/* Sent message (s-msg) aligned to the right */
+.s-msg {
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+.s-msg .msg {
+    border-radius: 8px 8px 0px 8px;
+    align-self: flex-end;    /* Ensure it aligns to the right */
+    margin-left: auto;       /* Pushes it to the right side */
+}
+.chat-box{
+    /* From https://css.glass */
+background: rgba(83, 75, 75, 0.55);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.1px);
+-webkit-backdrop-filter: blur(6.1px);
+border: 1px solid rgba(83, 75, 75, 1);
+}

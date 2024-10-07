@@ -1,0 +1,19 @@
+.login{
+    background: url(/public/background.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    
+}
+.logo{
+    width: max(20vw,200px);
+}
+.login-form{
+   /* From https://css.glass */
+background: rgba(104, 91, 91, 0.29);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.1px);
+-webkit-backdrop-filter: blur(5.1px);
+border: 1px solid rgba(104, 91, 91, 0.86);
+}
